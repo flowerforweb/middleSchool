@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="public/css/main.css">
     <link rel="stylesheet" href="public/css/accuil/header.css">
-    <link rel="stylesheet" href="auth/auth.css">
+    <link rel="stylesheet" href="public/css/auth/auth.css">
     <title>Document</title>
 </head>
 <body>
@@ -50,7 +50,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="{{route('coursesView')}}">
+                                            <a href="/courses">
                                                 Tous
                                             </a>
                                         </li>
@@ -103,12 +103,12 @@
                             <div class="auth-menu">
                                 <ul>
                                     <li>
-                                        <a href="{{route('login')}}" class="log">
+                                        <a href="/login" class="log">
                                             Connexion
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="{{route('register')}}" class="log">
+                                        <a href="/register" class="log">
                                             s'inscrire
                                         </a>
                                     </li>
@@ -144,7 +144,7 @@
                         <i class="fas fa-check i"></i>
                     </div>
                     <div class="already">
-                        tu n'a pas un conte? <a href="#">inscrire</a>
+                        tu n'a pas un conte? <a href="/register">inscrire</a>
                     </div>
                     <div class="sub">
                         <button type="submit">

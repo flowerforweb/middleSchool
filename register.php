@@ -8,12 +8,117 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="public/css/main.css">
     <link rel="stylesheet" href="./public/css/accuil/header.css">
-    <link rel="stylesheet" href="auth/auth.css">
+    <link rel="stylesheet" href="./public/css/auth/auth.css">
     <title>Document</title>
 </head>
 <body>
     <div id="app">
-        <x-header a="guest"/>
+        <div class="header  pos-rel">
+            <div class="inner">
+                <div class="brand">
+                    <i>
+                        <em>F</em>lower <em>S</em>pring
+                    </i>
+                </div>
+                <nav class="nav">
+                    <ul class="main-nav">
+                        <li>
+                            <a href="/" class="li-link">
+                                <i class="fas fa-home"></i> Accuil
+                            </a>
+                        </li>
+                        <li class="drop-li">
+                            <div class="drop niveau">
+                                <div class="toggle">
+                                    <span>
+                                        <i class="fas fa-users"></i> Cours
+                                    </span>
+                                    <span>
+                                        <i class="fas fa-caret-down"></i>
+                                    </span>
+                                </div>
+                                <div class="list" >
+                                    <ul>
+                                        <li>
+                                            <a href="{{route('coursesView')}}">
+                                                Deuxieme
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                troisieme
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/courses">
+                                                Tous
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="drop-li">
+                            <div class="drop categories">
+                                <div class="toggle">
+                                    <span>
+                                        <i class="fas fa-atom"></i> Categorie
+                                    </span>
+                                    <span>
+                                        <i class="fas fa-caret-down"></i>
+                                    </span>
+                                </div>
+                                <div class="list">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                Science
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                mathimatiques
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/" class="li-link">
+                                <i class="fas fa-envelope"></i> Contact us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="li-link">
+                                About us
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="sec-nav">
+                        <div class="auth">
+                            <button id="logDrop">
+                                connexion or inscrire <i class="fas fa-caret-down"></i>
+                            </button>
+                            <div class="auth-menu">
+                                <ul>
+                                    <li>
+                                        <a href="/login" class="log">
+                                            Connexion
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/register" class="log">
+                                            s'inscrire
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
         <div class="auth-container reg-con">
             <div class="inner">
                 <div class="auth-header">
@@ -49,7 +154,7 @@
                         <i class="fas fa-check i"></i>
                     </div>
                     <div class="already">
-                        tu a un conte? <a href="#">connexion</a>
+                        tu a un conte? <a href="/login">connexion</a>
                     </div>
                     <div class="sub">
                         <button type="submit">
